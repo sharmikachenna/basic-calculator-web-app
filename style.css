@@ -1,0 +1,84 @@
+body {
+  background: #c3bfbf; /* white background */
+  display: flex;
+  justify-content: center; /* Centers calculator horizontally */
+  align-items: center;     /* Centers calculator vertically */
+  height: 100vh;           /* Makes page height match viewport */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Simple, clean font */
+}
+
+/* Calculator box styling */
+.calculator {
+  background: #121111; /* Slightly lighter shade than body */
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px; /* Fixed width for a tidy layout */
+}
+
+/* Display area styling */
+#display {
+  background: rgb(33, 33, 33);
+  color: rgb(250, 254, 255); /* White text */
+  font-size: 2rem; /* Large, readable digits */
+  padding: 10px;
+  border-radius: 6px;
+  min-height: 50px;
+  text-align: right; /* Numbers align to the right like a real calculator */
+  user-select: none; /* Prevent text selection */
+  word-wrap: break-word;
+}
+
+/* Layout for all buttons using a grid */
+.buttons {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns across */
+  grid-auto-rows: 60px; /* Each button has equal height */
+  gap: 10px; /* Space between buttons */
+}
+
+/* General button styling */
+button {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 6px;
+  background: #3a3939; /* Default button color */
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Operator buttons (like +, -, ÷, ×) */
+button.operator {
+  background: #f1c40f; /* Yellow for emphasis */
+  color: black;
+}
+
+/* Clear all button (AC) */
+button.ac {
+  background: #e74c3c; 
+}
+
+/* Delete button (DEL) */
+button.del {
+  background: #c0392b;
+}
+
+/* Disabled button appearance */
+button:disabled {
+  background: #444;
+  cursor: default;
+}
+
+/* The equals button is taller and greener for visibility */
+button#equals {
+  grid-row: 5 / span 2; /* Takes up two rows */
+  grid-column: 4;      
+  background: #27ae60;  
+  color: white;
+  font-size: 1.8rem;
+}

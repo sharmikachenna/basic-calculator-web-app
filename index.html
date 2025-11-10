@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Calculator container -->
+  <div class="calculator">
+
+    <!-- Display area for showing input and results -->
+    <div id="display">0</div>
+
+    <!-- All calculator buttons arranged in a grid -->
+    <div class="buttons">
+      <!-- Top control buttons -->
+      <button class="ac">AC</button>
+      <button class="del">DEL</button>
+      <button data-value="√">√</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <!-- Number and operator buttons -->
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="-">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-value="+">+</button>
+
+      <!-- Bottom row and special symbols -->
+      <button data-value="%">%</button>
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button data-value="π">π</button>
+      <button data-value="(">(</button>
+      <button data-value=")">)</button>
+
+      <!-- Equals button (taller for emphasis) -->
+      <button id="equals" class="operator">=</button>
+    </div>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
