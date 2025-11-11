@@ -55,7 +55,7 @@ You can use the keyboard to operate the calculator:
 ## 🔗 Live Demo
 
 Click the link below to open and use the calculator directly:  
-👉 [**Basic Calculator**](https://sharmikachenna.github.io/basic-calculator-web-app/)
+## 👉 [**Basic Calculator**](https://sharmikachenna.github.io/basic-calculator-web-app/)
 
 ## 🧾 Conclusion
 
