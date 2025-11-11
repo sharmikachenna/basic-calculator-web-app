@@ -60,3 +60,7 @@ Click the link below to open and use the calculator directly:
 ## 🧾 Conclusion
 
 This project demonstrates how HTML, CSS, and JavaScript can be combined to build a fully functional, user-friendly calculator with both button and keyboard support.
+
+----
+# 👤 Author
+Sharmika Chenna
